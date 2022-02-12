@@ -3,21 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T01. Train", "T01. Train\T01. Train.csproj", "{BD005A0E-C2C0-4325-A0C4-7E4F65B5D3C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "T01. Train", "T01. Train\T01. Train.csproj", "{BD005A0E-C2C0-4325-A0C4-7E4F65B5D3C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{1A74C069-2AD9-4B28-B703-2D358D728FC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo", "Demo\Demo.csproj", "{1A74C069-2AD9-4B28-B703-2D358D728FC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T02. Change List", "T02. Change List\T02. Change List.csproj", "{27415D17-AE19-4BCE-9713-287A8E25068B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "T02. Change List", "T02. Change List\T02. Change List.csproj", "{27415D17-AE19-4BCE-9713-287A8E25068B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T03. House Party", "T03. House Party\T03. House Party.csproj", "{10544E75-F649-4D4E-BC70-ACDF4B0560A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "T03. House Party", "T03. House Party\T03. House Party.csproj", "{10544E75-F649-4D4E-BC70-ACDF4B0560A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T04. List Operations", "T04. List Operations\T04. List Operations.csproj", "{A1DAB289-8492-4FBE-8794-ED4285E2C937}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "T04. List Operations", "T04. List Operations\T04. List Operations.csproj", "{A1DAB289-8492-4FBE-8794-ED4285E2C937}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T05. Bomb Numbers", "T05. Bomb Numbers\T05. Bomb Numbers.csproj", "{39701788-B216-4AAD-B4F8-DC7F77B67B95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "T05. Bomb Numbers", "T05. Bomb Numbers\T05. Bomb Numbers.csproj", "{39701788-B216-4AAD-B4F8-DC7F77B67B95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T06. Cards Game", "T06. Cards Game\T06. Cards Game.csproj", "{BEADB8B3-8FB5-4CD6-8451-79FBF46B7FE5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "T06. Cards Game", "T06. Cards Game\T06. Cards Game.csproj", "{BEADB8B3-8FB5-4CD6-8451-79FBF46B7FE5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T07. Append Arrays", "T07. Append Arrays\T07. Append Arrays.csproj", "{1AA37377-1107-4031-92E6-FF661DF63C16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "T07. Append Arrays", "T07. Append Arrays\T07. Append Arrays.csproj", "{1AA37377-1107-4031-92E6-FF661DF63C16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T10. SoftUni Course Planning", "T10. SoftUni Course Planning\T10. SoftUni Course Planning.csproj", "{2D58A056-C691-4506-A3A9-68215D03F968}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{1AA37377-1107-4031-92E6-FF661DF63C16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1AA37377-1107-4031-92E6-FF661DF63C16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1AA37377-1107-4031-92E6-FF661DF63C16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D58A056-C691-4506-A3A9-68215D03F968}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D58A056-C691-4506-A3A9-68215D03F968}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D58A056-C691-4506-A3A9-68215D03F968}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D58A056-C691-4506-A3A9-68215D03F968}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

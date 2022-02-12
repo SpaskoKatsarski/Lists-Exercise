@@ -7,24 +7,126 @@ namespace Demo
     {
         static void Main(string[] args)
         {
-            List<string> names = new List<string>
+            //List<string> names = new List<string>
+            //{
+            //    "Ivan",
+            //    "Pesho",
+            //    "Go6o"
+            //};
+
+            //names.Insert(1, "Yoana");
+
+            //Console.WriteLine(names.Remove("Go6o"));
+
+            //Console.WriteLine(names.Count);
+
+            //string name = Console.ReadLine();
+
+            //Console.WriteLine($"Contains -> {names.Contains(name)}");
+
+            //Console.WriteLine(string.Join(", ", names));
+
+            string[] input =
             {
-                "Ivan",
-                "Pesho",
-                "Go6o"
+                "Brachiosaurus",
+                "Amargasaurus",
+                "Mamenchisaurus"
             };
 
-            names.Insert(1, "Yoana");
+            List<string> dinosaurs = new List<string>(input);
 
-            Console.WriteLine(names.Remove("Go6o"));
+            Console.WriteLine("\nCapacity: {0}", dinosaurs.Capacity);
 
-            Console.WriteLine(names.Count);
+            Console.WriteLine();
+            foreach (string dinosaur in dinosaurs)
+            {
+                Console.WriteLine(dinosaur);
+            }
 
-            string name = Console.ReadLine();
+            Console.WriteLine("\nAddRange(dinosaurs)");
+            dinosaurs.AddRange(dinosaurs);
 
-            Console.WriteLine($"Contains -> {names.Contains(name)}");
+            Console.WriteLine();
+            foreach (string dinosaur in dinosaurs)
+            {
+                Console.WriteLine(dinosaur);
+            }
 
-            Console.WriteLine(string.Join(", ", names));
+            Console.WriteLine("\nRemoveRange(2, 2)");
+            dinosaurs.RemoveRange(2, 2);
+
+            Console.WriteLine();
+            foreach (string dinosaur in dinosaurs)
+            {
+                Console.WriteLine(dinosaur);
+            }
+
+            input = new string[]
+            {
+                "Tyrannosaurus",
+                "Deinonychus",
+                "Velociraptor"
+            };
+
+            Console.WriteLine("\nInsertRange(3, input)");
+            dinosaurs.InsertRange(3, input);
+
+            Console.WriteLine();
+            foreach (string dinosaur in dinosaurs)
+            {
+                Console.WriteLine(dinosaur);
+            }
+
+            Console.WriteLine("\noutput = dinosaurs.GetRange(2, 3).ToArray()");
+            string[] output = dinosaurs.GetRange(2, 3).ToArray();
+
+            Console.WriteLine();
+            foreach (string dinosaur in output)
+            {
+                Console.WriteLine(dinosaur);
+
+                /* This code example produces the following output:
+
+                Capacity: 3
+
+                Brachiosaurus
+                Amargasaurus
+                Mamenchisaurus
+
+                AddRange(dinosaurs)
+
+                Brachiosaurus
+                Amargasaurus
+                Mamenchisaurus
+                Brachiosaurus
+                Amargasaurus
+                Mamenchisaurus
+
+                RemoveRange(2, 2)
+
+                Brachiosaurus
+                Amargasaurus
+                Amargasaurus
+                Mamenchisaurus
+
+                InsertRange(3, input)
+
+                Brachiosaurus
+                Amargasaurus
+                Amargasaurus
+                Tyrannosaurus
+                Deinonychus
+                Velociraptor
+                Mamenchisaurus
+
+                output = dinosaurs.GetRange(2, 3).ToArray()
+
+                Amargasaurus
+                Tyrannosaurus
+                Deinonychus
+                 */
+            }
         }
     }
 }
+

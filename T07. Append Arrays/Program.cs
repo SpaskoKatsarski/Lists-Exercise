@@ -8,23 +8,21 @@ namespace T07._Append_Arrays
     {
         static void Main(string[] args)
         {
-            string[] arr = Console.ReadLine().Split("|", StringSplitOptions.RemoveEmptyEntries);
+            List<string> startingList = Console.ReadLine()
+                .Split('|')
+                .Reverse()
+                .ToList();
 
-            List<string> result = new List<string>();
+            // 1 2 3 |4 5 6 |  7  8
 
-            foreach (var item in arr)
+            List<int> numbers = new List<int>();
+
+            foreach (var str in startingList)
             {
-                result.Add(item);
-            }
-            
-            while (result.Contains(" "))
-            {
-                result.Remove(" ");
+                numbers.AddRange(str.Split(' ', StringSplitOptions.RemoveEmptyEntries).Select(int.Parse));
             }
 
-            result.Reverse();
-
-            Console.WriteLine(String.Join("", result.Where(s => !string.IsNullOrEmpty(s))));
+            Console.WriteLine(string.Join(' ', numbers));
         }
     }
 }

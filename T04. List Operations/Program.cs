@@ -16,7 +16,7 @@ namespace T04._List_Operations
             {
                 string[] commandArgs = input.Split();
                 string action = commandArgs[0];
-                
+
                 if (action == "Add")
                 {
                     numbers.Add(int.Parse(commandArgs[1]));
@@ -51,6 +51,8 @@ namespace T04._List_Operations
                 else if (action == "Shift")
                 {
                     int count = int.Parse(commandArgs[2]);
+
+                    count %= numbers.Count;
 
                     if (commandArgs[1] == "left")
                     {
